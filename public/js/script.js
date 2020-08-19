@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
     img.src = ''
 
 
-    const url = 'http://localhost:3000/weather?location=' + text.value
+    const url = '/weather?location=' + text.value
     fetch(url).then((response) => {
         response.json().then((data) => {
             if (data.error) {

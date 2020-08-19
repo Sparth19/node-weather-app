@@ -4,6 +4,9 @@ const path = require('path')
 const hbs = require('hbs')
 const getWeatherInfo = require('./utils/getWeatherInfo')
 
+//for deploying app
+const port = process.env.port || 3000
+
 const app = express()
 
 //path for express config
@@ -83,6 +86,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(chalk.greenBright.inverse("Server is On !"))
 })
