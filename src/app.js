@@ -5,8 +5,8 @@ const hbs = require('hbs')
 const getWeatherInfo = require('./utils/getWeatherInfo')
 
 //for deploying app
-const port = process.env.port || 3000
-
+const port = process.env.PORT || 3000
+    //
 const app = express()
 
 //path for express config
