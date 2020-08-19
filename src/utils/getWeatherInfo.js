@@ -11,9 +11,9 @@ const getWeatherInfo = (loc, callback) => {
         } else {
             const data = response.body
             const sendData = {
-                print: data.current.weather_descriptions + ". Temprature is " + data.current.temperature + " but it feels like " + data.current.feelslike + " in " + data.location.name + '-' + data.location.region + '-' + data.location.country + ".",
-                city: data.location.name,
-                img: data.current.weather_icons
+                print: data.current.weather_descriptions + ". Temprature is " + data.current.temperature + " but it feels like " + data.current.feelslike,
+                city: data.location.name + '-' + data.location.region + '-' + data.location.country,
+                img: data.current.weather_icons,
             }
             callback(undefined, sendData)
         }

@@ -6,6 +6,7 @@ body {
     font-style: bold;
     display: flex;
     flex-direction: column;
+    background-color: #d4cfcf;
     min-height: 100vh;
 }
 

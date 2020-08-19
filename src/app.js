@@ -26,7 +26,7 @@ hbs.registerPartials(partialPath)
 app.get('', (req, res) => {
     res.render('', {
         title: 'Weather',
-        body: 'Welcome to Weather app',
+        body: 'Check out weather in your city !',
         name: 'Parth Shekhaliya'
     })
 })
@@ -43,7 +43,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        body: 'Welcome to Help',
+        body: 'We are happy to help you !',
         name: 'Parth Shekhaliya'
     })
 
@@ -63,7 +63,7 @@ app.get('/weather', (req, res) => {
         res.send({
             locationData: data.city,
             printData: data.print,
-            imgData: data.img
+            imgData: data.img,
         })
     })
 })

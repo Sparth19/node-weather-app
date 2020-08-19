@@ -8,7 +8,6 @@ const msg1 = document.getElementById('msg1')
 const msg2 = document.getElementById('msg2')
 const img = document.getElementById('weatherimg')
 
-
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
